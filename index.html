@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnoTech Event Playlist</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f9ff;
+      color: #333;
+      margin: 0;
+      padding: 0rem 2rem;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+
+    .logo {
+        border-radius: 50%;
+      background-color:#1d74b3;
+      width: 180px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      color: #0071ce;
+      text-align: center;
+    }
+
+    .slideshow {
+      display: flex;
+      overflow-x: auto;
+      gap: 2rem;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 2rem;
+    }
+
+    .section {
+      min-width: 300px;
+      flex: 0 0 auto;
+      background-color: #ffffff;
+      border: 1px solid #dbeafe;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 113, 206, 0.1);
+      scroll-snap-align: start;
+    }
+    .section:hover{
+        transform:scale(1.1);
+        transition-duration: 1200ms;
+    }
+    .section h2 {
+      color: #0071ce;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .song {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0.5rem 0;
+      border-bottom: 1px dashed #ddd;
+      padding-bottom: 0.5rem;
+    }
+
+    .listen-button {
+      background-color: #0071ce;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 0.3rem 0.8rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .listen-button:hover {
+      transform: scale(1.1);
+      transition-duration: 600ms;
+      background-color: #005fa3;
+    }
+
+    .slideshow::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .slideshow::-webkit-scrollbar-thumb {
+      background: #0071ce;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="cs_club_logo.svg"  alt="CS Club Logo">
+    <h1>🎶 InnoTech Event Playlist 🎶 <h1  style="color: BLACK;display: ;">(Preview pour Allae)</h1></h1>
+  </header>
+  <div class="slideshow">
+    <div class="section">
+      <h2>🛬 Arrival – Accueil des participants</h2>
+      <div class="song"><span>Raveena - If Only</span><a class="listen-button" href="https://www.youtube.com/watch?v=E2ndTCorYsI" target="_blank">Listen</a></div>
+      <div class="song"><span>Tom Misch – It Runs Through Me</span><a class="listen-button" href="https://www.youtube.com/watch?v=M1N_wbhAfQ4" target="_blank">Listen</a></div>
+      <div class="song"><span>Khruangbin – White Gloves</span><a class="listen-button" href="https://www.youtube.com/watch?v=wJzoos4rE_o" target="_blank">Listen</a></div>
+      <div class="song"><span>Joji – Sanctuary</span><a class="listen-button" href="https://www.youtube.com/watch?v=g5Mtin2YslA" target="_blank">Listen</a></div>
+      <div class="song"><span>FKJ – Ylang Ylang</span><a class="listen-button" href="https://www.youtube.com/watch?v=EfgAd6iHApE" target="_blank">Listen</a></div>
+      <div class="song"><span>Idealism – Controlla</span><a class="listen-button" href="https://www.youtube.com/watch?v=McJ7axVGEf8" target="_blank">Listen</a></div>
+    </div>
+
+    <div class="section">
+      <h2>🎨 Artistic Opening</h2>
+      <div class="song"><span>Tycho – Awake</span><a class="listen-button" href="https://www.youtube.com/watch?v=ziAqB9nb_To" target="_blank">Listen</a></div>
+      <div class="song"><span>Bonobo – Kerala</span><a class="listen-button" href="https://www.youtube.com/watch?v=S0Q4gqBUs7c" target="_blank">Listen</a></div>
+    </div>
+
+    <div class="section">
+      <h2>🎥 Video Projection</h2>
+      <div class="song"><span>Hans Zimmer – Time</span><a class="listen-button" href="https://www.youtube.com/watch?v=c56t7upa8Bk" target="_blank">Listen</a></div>
+      <div class="song"><span>Ooyy – Calling Me</span><a class="listen-button" href="https://www.youtube.com/watch?v=iYQswh4nO4M" target="_blank">Listen</a></div>
+    </div>
+
+    <div class="section">
+      <h2>🎤 Speeches & Tech Talk</h2>
+      <div class="song"><span>Nujabes – Feather</span><a class="listen-button" href="https://www.youtube.com/watch?v=hQ5x8pHoIPA" target="_blank">Listen</a></div>
+      <div class="song"><span>Ludovico Einaudi – Experience</span><a class="listen-button" href="https://www.youtube.com/watch?v=1e9B31FLT-s" target="_blank">Listen</a></div>
+    </div>
+
+    <div class="section">
+      <h2>☕️ Break & Backstage</h2>
+      <div class="song"><span>Mac Ayres – Easy</span><a class="listen-button" href="https://www.youtube.com/watch?v=MoSmX1xNnAQ" target="_blank">Listen</a></div>
+      <div class="song"><span>RINI – My Favourite Clothes</span><a class="listen-button" href="https://www.youtube.com/watch?v=oNIBAL8x9-4" target="_blank">Listen</a></div>
+      <div class="song"><span>Tomppabeats – Smile</span><a class="listen-button" href="https://www.youtube.com/watch?v=OcCg580E5GU" target="_blank">Listen</a></div>
+    </div>
+
+    <div class="section">
+      <h2>🧠 CS Quiz Master</h2>
+      <div class="song"><span>Duckwrth – Start A Riot</span><a class="listen-button" href="https://www.youtube.com/watch?v=dNRC137o0j8" target="_blank">Listen</a></div>
+      <div class="song"><span>HONNE – Warm On A Cold Night</span><a class="listen-button" href="https://www.youtube.com/watch?v=BDgXzpD_bx0" target="_blank">Listen</a></div>
+      <div class="song"><span>Daft Punk – Lose Yourself to Dance</span><a class="listen-button" href="https://www.youtube.com/watch?v=NF-kLy44Hls" target="_blank">Listen</a></div>
+    </div>
+
+    <div class="section">
+      <h2>🎓 Certificate Ceremony</h2>
+      <div class="song"><span>M83 – Wait</span><a class="listen-button" href="https://www.youtube.com/watch?v=lAwYodrBr2Q" target="_blank">Listen</a></div>
+      <div class="song"><span>ODESZA – Line of Sight</span><a class="listen-button" href="https://www.youtube.com/watch?v=HdzI-191xhU" target="_blank">Listen</a></div>
+      <div class="song"><span>Sigur Rós – Hoppípolla</span><a class="listen-button" href="https://www.youtube.com/watch?v=4L_DQKCDgeM" target="_blank">Listen</a></div>
+    </div>
+
+    <div class="section">
+      <h2>📸 Final DJ & Photo Time</h2>
+      <div class="song"><span>Kaytranada – Glowed Up</span><a class="listen-button" href="https://www.youtube.com/watch?v=nhGq1tEbczU" target="_blank">Listen</a></div>
+      <div class="song"><span>Fred again.. – Jungle</span><a class="listen-button" href="https://www.youtube.com/watch?v=QdJCpwhS5z8" target="_blank">Listen</a></div>
+      <div class="song"><span>Calvin Harris – Slide</span><a class="listen-button" href="https://www.youtube.com/watch?v=8Ee4Qjce5kE" target="_blank">Listen</a></div>
+      <div class="song"><span>Majid Jordan – Waves of Blue</span><a class="listen-button" href="https://www.youtube.com/watch?v=HvEBRTQZP1Y" target="_blank">Listen</a></div>
+      <div class="song"><span>DJ Snake – Disco Maghreb</span><a class="listen-button" href="https://www.youtube.com/watch?v=8n91K2nU6QE" target="_blank">Listen</a></div>
+    </div>
+  </div>
+</body>
+</html>
